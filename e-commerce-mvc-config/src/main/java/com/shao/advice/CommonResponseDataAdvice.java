@@ -21,7 +21,7 @@ public class CommonResponseDataAdvice implements ResponseBodyAdvice<Object> {
         } else {
             Method method = methodParameter.getMethod();
             if (method != null && method.isAnnotationPresent(IgnoreResponseAdvice.class)) {
-                return true;
+                return false;
             }
         }
         return true;
