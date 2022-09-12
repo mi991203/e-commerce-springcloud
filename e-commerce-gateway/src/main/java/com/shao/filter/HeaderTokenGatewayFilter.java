@@ -16,7 +16,7 @@ public class HeaderTokenGatewayFilter implements GatewayFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         final String token = exchange.getRequest().getHeaders().getFirst("token");
-        if ("shao".equals(token)) {
+        if ("imooc".equals(token)) {
             return chain.filter(exchange);
         }
         exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);

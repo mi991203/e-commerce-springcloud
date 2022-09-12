@@ -13,12 +13,12 @@ spring:
         # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
         enabled: true
         namespace: 5a17d9a0-e2bb-490d-9a59-b4218c1e3751
-        server-addr: 192.168.137.20:8848
+        server-addr: 192.168.137.10:8848
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
       config:
-        server-addr: 192.168.137.20:8848
+        server-addr: 192.168.137.10:8848
         file-extension: yaml
 
 # 暴露端点

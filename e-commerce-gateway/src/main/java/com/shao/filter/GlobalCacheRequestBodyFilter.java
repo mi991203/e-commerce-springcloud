@@ -16,7 +16,8 @@ import reactor.core.publisher.Mono;
 
 /**
  * @author : SH35856
- * @Description: 缓存请求 body 的全局过滤器
+ * @Description: 缓存请求 body 的全局过滤器（需要这个过滤器的原因：对于用户的登录和注册，gateway模块需要访问
+ * authority鉴权模块，这时需要需要得到POSt请求中body中的数据，但是在过滤器中是得不到相关数据的，所以需要先把这个数据缓存着。
  * @date: 2022/9/9 13:36
  */
 @Slf4j
@@ -34,7 +35,6 @@ public class GlobalCacheRequestBodyFilter implements GlobalFilter, Ordered {
 
         // DataBufferUtils.join 拿到请求中的数据 --> DataBuffer
         return DataBufferUtils.join(exchange.getRequest().getBody()).flatMap(dataBuffer -> {
-
             // 确保数据缓冲区不被释放, 必须要 DataBufferUtils.retain
             DataBufferUtils.retain(dataBuffer);
             // defer、just 都是去创建数据源, 得到当前数据的副本
