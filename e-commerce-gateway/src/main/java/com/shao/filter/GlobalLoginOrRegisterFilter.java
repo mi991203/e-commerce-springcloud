@@ -27,6 +27,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -136,8 +137,9 @@ public class GlobalLoginOrRegisterFilter implements GlobalFilter, Ordered {
         Flux<DataBuffer> body = request.getBody();
         AtomicReference<String> bodyRef = new AtomicReference<>();
         body.subscribe(buffer -> {
-            StandardCharsets.UTF_8.decode(buffer.asByteBuffer());
+            final CharBuffer charBuffer = StandardCharsets.UTF_8.decode(buffer.asByteBuffer());
             DataBufferUtils.release(buffer);
+            bodyRef.set(charBuffer.toString());
         });
         return bodyRef.get();
     }

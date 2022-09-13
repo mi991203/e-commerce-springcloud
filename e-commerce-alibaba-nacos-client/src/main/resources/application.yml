@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: ecommerce-nacos-client
+    name: e-commerce-nacos-client
   cloud:
     nacos:
       # 服务注册发现

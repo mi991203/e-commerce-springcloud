@@ -20,7 +20,7 @@ public class NacosClientController {
         this.nacosClientService = nacosClientService;
     }
 
-    @GetMapping("/instance-infos")
+    @GetMapping("/service-instance")
     public List<ServiceInstance> getInstancesByServiceId(@RequestParam("service-id") String serviceId) {
         return nacosClientService.getNacosInstance(serviceId);
     }
