@@ -1,0 +1,2 @@
+java -DRABBIT_ADDRESSES=localhost:5672  -jar ./zipkin-server-2.21.7-exec.jar --STORAGE_TYPE=mysql --server.port=9411 --MYSQL_HOST=192.168.137.10 --MYSQL_TCP_PORT=3306 --MYSQL_USER=root --MYSQL_PASS
+=sh19991203 --MYSQL_DB=imooc_zipkin

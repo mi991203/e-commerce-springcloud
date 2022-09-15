@@ -16,6 +16,16 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    sender:
+      type: rabbit
+    base-url: http://localhost:9411/
+
 
 
 #    静态路由
