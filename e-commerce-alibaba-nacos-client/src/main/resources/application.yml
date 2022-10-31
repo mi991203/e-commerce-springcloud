@@ -21,14 +21,14 @@ spring:
         server-addr: 192.168.137.10:8848
         file-extension: yaml
   rabbitmq:
-    host: localhost
+    host: 192.168.137.10
     port: 5672
     username: guest
     password: guest
   zipkin:
     sender:
-      type: rabbit
-    base-url: http://localhost:9411/
+      type: RABBIT
+    base-url: http://192.168.137.10:9411/
 
 # 暴露端点
 management:

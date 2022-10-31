@@ -17,13 +17,13 @@ spring:
           management:
             context-path: ${server.servlet.context-path}/actuator
   rabbitmq:
-    host: localhost
+    host: 192.168.137.10
     port: 5672
     username: guest
     password: guest
   zipkin:
     sender:
-      type: rabbit
+      type: RABBIT
     base-url: http://localhost:9411/
 
 

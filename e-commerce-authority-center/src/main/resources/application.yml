@@ -33,7 +33,7 @@ spring:
       auto-commit: true
       pool-name: ImoocEcommerceHikariCP
   rabbitmq:
-    host: localhost
+    host: 192.168.137.10
     port: 5672
     username: guest
     password: guest
