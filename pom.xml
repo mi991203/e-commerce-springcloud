@@ -15,7 +15,6 @@
         <module>e-commerce-authority-center</module>
         <module>e-commerce-gateway</module>
         <module>e-commerce-service</module>
-        <module>e-commerce-service/e-commerce-account-service</module>
     </modules>
 
     <packaging>pom</packaging>
