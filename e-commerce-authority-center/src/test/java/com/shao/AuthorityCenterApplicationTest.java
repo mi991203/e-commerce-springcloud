@@ -2,7 +2,7 @@ package com.shao;
 
 import cn.hutool.crypto.digest.MD5;
 import com.alibaba.fastjson.JSON;
-import com.shao.entity.TEcommerceUser;
+import com.shao.common.TEcommerceUser;
 import com.shao.service.ITEcommerceUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

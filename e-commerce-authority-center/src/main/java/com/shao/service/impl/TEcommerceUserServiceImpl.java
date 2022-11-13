@@ -1,6 +1,6 @@
 package com.shao.service.impl;
 
-import com.shao.entity.TEcommerceUser;
+import com.shao.common.TEcommerceUser;
 import com.shao.mapper.TEcommerceUserMapper;
 import com.shao.service.ITEcommerceUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

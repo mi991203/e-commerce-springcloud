@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.shao.constant.AuthorityConstant;
 import com.shao.constant.CommonConstant;
-import com.shao.entity.TEcommerceUser;
+import com.shao.common.TEcommerceUser;
 import com.shao.mapper.TEcommerceUserMapper;
 import com.shao.service.IJWTService;
 import com.shao.vo.LoginUserInfo;

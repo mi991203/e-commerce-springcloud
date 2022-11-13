@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/e-commerce-service/e-commerce-account-service/e-commerce-account-service.iml" filepath="$PROJECT_DIR$/e-commerce-service/e-commerce-account-service/e-commerce-account-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-admin/e-commerce-admin.iml" filepath="$PROJECT_DIR$/e-commerce-admin/e-commerce-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-alibaba-nacos-client/e-commerce-alibaba-nacos-client.iml" filepath="$PROJECT_DIR$/e-commerce-alibaba-nacos-client/e-commerce-alibaba-nacos-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-authority-center/e-commerce-authority-center.iml" filepath="$PROJECT_DIR$/e-commerce-authority-center/e-commerce-authority-center.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/e-commerce-mvc-config/e-commerce-mvc-config.iml" filepath="$PROJECT_DIR$/e-commerce-mvc-config/e-commerce-mvc-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-service/e-commerce-service.iml" filepath="$PROJECT_DIR$/e-commerce-service/e-commerce-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-service/e-commerce-service-config/e-commerce-service-config.iml" filepath="$PROJECT_DIR$/e-commerce-service/e-commerce-service-config/e-commerce-service-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-commerce-service/e-commerce-service-sdk/e-commerce-service-sdk.iml" filepath="$PROJECT_DIR$/e-commerce-service/e-commerce-service-sdk/e-commerce-service-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/e-commerce-springcloud.iml" filepath="$PROJECT_DIR$/e-commerce-springcloud.iml" />
     </modules>
   </component>

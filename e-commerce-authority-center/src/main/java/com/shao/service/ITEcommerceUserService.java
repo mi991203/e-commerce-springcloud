@@ -1,6 +1,6 @@
 package com.shao.service;
 
-import com.shao.entity.TEcommerceUser;
+import com.shao.common.TEcommerceUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
