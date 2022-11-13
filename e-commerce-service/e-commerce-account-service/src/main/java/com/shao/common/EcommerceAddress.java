@@ -45,15 +45,15 @@ public class EcommerceAddress {
     private String city;
 
     /** 详细地址 */
-    @TableField("addressDetail")
+    @TableField("address_detail")
     private String addressDetail;
 
     /** 创建时间 */
-    @TableField("createTime")
+    @TableField("create_time")
     private LocalDateTime createTime;
 
     /** 更新时间 */
-    @TableField("username")
+    @TableField("update_time")
     private LocalDateTime updateTime;
 
     /**
